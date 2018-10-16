@@ -1,0 +1,1 @@
+Os arquivos do exercício 3 foram copiados para essa pasta devido ao include. Não sei se está correto, mas procurei e vi que não seria algo genérico colocar  todo o caminho dos arquivos salvos, e também procurei por algum comando para acessar o diretório anterior, e vi que ficaria restrito ao sistema usado.
