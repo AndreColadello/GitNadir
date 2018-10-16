@@ -1,0 +1,6 @@
+
+Valores atuais:
+
+ - Modo = 1.000000;
+ - Abertura da valvula em t = 10.000000 s;
+ - Tempo de abertura da valvula = 15.000000 s.
