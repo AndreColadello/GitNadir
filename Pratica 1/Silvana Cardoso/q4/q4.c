@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include "q3b.h"
+
+
+int main()
+{
+    double w, x, y, z;
+ char ch;
+    FILE *arq;
+    int result;
+    arq = fopen("resultados.txt", "a");
+ printf("Digite uma funcao (+, *, /, mp): ");
+ ch = getchar();
+
+ switch(ch)
+ {
+ case '+':
+   printf("Digite três números: ");
+    scanf("%lf %lf %lf", &x, &y, &w);
+    z=soma(x, y, w);
+    break;
+
+case '*':
+    printf("Digite três números: ");
+    scanf("%lf %lf %lf", &x, &y, &w);
+    z=prod(x, y, w);
+    break;
+
+case 'm':
+    printf("Média Ponderada. Os pesos são: 5 para n1, 3 para n2 e 2 para n3. Digite três números: ");
+    scanf("%lf %lf %lf", &x, &y, &w);
+    z=m(x, y, w);
+    break;
+
+case '/':
+    printf("Digite dois números: ");
+    scanf("%lf %lf", &x, &y);
+    if (y==0)
+    printf ("Impossível dividir por 0.");
+
+    else
+    z=div(x, y);
+    break;
+default:
+    printf("Erro! Operador inválido.");
+ }
+ printf("Resultado = %.2lf\n",z);
+
+ if (arq==NULL){
+        printf("Problemas na ABERTURA do arquivo\n");
+        system ("pause");
+        exit(1);
+    }
+    result = fprintf(arq, "Resultado: %.2lf\n", z);
+    if (result<0)
+        printf("Erro na escrita\n");
+
+    fclose(arq);
+ return 0;
+
+}
