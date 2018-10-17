@@ -1,0 +1,3 @@
+Modo de operacao: 1
+Abertura da valvula: 1.000000
+Tempo de abertura: 1.000000
