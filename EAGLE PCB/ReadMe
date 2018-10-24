@@ -6,7 +6,24 @@ Baixem as bibliotecas do repositório;
 Para instalar o Eagle:
 Crie uma conta no site da Autodesk com seu e-mail USP/UFSCAr;
 Baixe por: https://www.autodesk.com/education/free-software/eagle
+Para instalar as bibliotecas: 
+(com o Eagle fechado) Baixar o repósitorio e copiar os arquivos .lbr em "Documentos > Eagle > lbr (ou Libraries)
+Alternativa: Seguir o tutorial https://www.autodesk.com/products/eagle/blog/library-basics-install-use-sparkfun-adafruit-libraries-autodesk-eagle/
 ************
 Slides:
   - Primeira apresentação: https://docs.google.com/presentation/d/11SdAYe5G28UFslfNFmc2cbDpg_CCVE46XKE5g7ZhFXM/edit?usp=sharing
+************
+Primeira parte - Esquemático:
+  - Material de apoio:
+    Básico de esquemáticos: https://learn.sparkfun.com/tutorials/using-eagle-schematic/all
+    Esquemático (+ completo): https://www.youtube.com/watch?v=GGBcdoFhdWs
+    Overview pela autodesk (intermediário): https://www.youtube.com/watch?v=tA-scL-ip7M
   
+  - Primeiro exercício:
+    Desenhar o esquemático de um circuito com ao menos 15 componentes, dentre os quais ao menos um micrcontrolador, um sistema de alimentação 
+    para 12V de entrada e um LED. Esse esquemático será utilizado na segunda parte do treinamento, para gerar o layout, logo escolham
+    componentes reais. Farei uma verificação parcial dia 29/10 para ajudar com possíveis erros. A entrega final deverá ser feita até dia 
+    01/11 no e-mail: francesco.lena@usp.br
+    Para o pessoal que faltou no primeiro dia: O ambiente para esquemáticos é relativamente simples, não deverão ter maiores problemas 
+    consultando o material de apoio. Não gravei a tela do computador pois ia ficar confuso de mais. Se alguém tiver algum problema podem me 
+    contactar que marcamos algum horário.
