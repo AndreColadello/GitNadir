@@ -1,0 +1,73 @@
+program desacoplamento_sonda;
+
+#include <PEPE20.h>
+#include <SENSORS.h>
+#include <IMU.h>
+#include <MAXON.h>
+#include <CAMERA.h>
+#include <NAVEMAE.h>
+
+
+int check_subsistemas(){
+	teste_comunicacao; \\devolve um certo valor para a variavel "teste", que pode ser 0, 1 ou 2, sendo 2 o valor que simboliza o funcionamento do sistema
+	if (teste == 1){
+		turnon(comunicacao);
+	}
+	if (teste == 0){
+		set_transmissor(PEPE20);
+		pepe20(comunicacao nao funcionando);
+	}
+
+	teste_locomocao;
+	if (teste == 1){
+		turnon(locomocao);
+	}
+	if (teste == 0){
+		set_transmissor(PEPE20);
+		pepe20(locomocao nao funcionando);
+	}
+
+	teste_sensoriamento;
+	if (teste == 1){
+		turnon(sensoriamento);
+	}
+	if (teste == 0){
+		set_transmissor(PEPE20);
+		pepe20(sensoriamento nao funcionando);
+	}
+	set_receiver(PEPE20);
+}
+
+
+
+int main (){ 
+
+	FILE *situation
+	FILE *foto
+
+	check_subsistemas;
+	
+	releaseTiago;
+	orbit_corrector;
+	pouso;
+
+	check_subsistemas;
+
+	loop{
+		set_transmissor(PEPE20)
+		imu(situation); \\funcao que escreve os dados do componente em um arquivo referido
+		pepe20(*situation); \\funcao que manda um arquivo de ate 255 bytes para a base
+
+		temperature(situation);
+		pepe20(*situation);
+
+		fotodiodos(situation);
+		pepe20(*situation);
+
+		camera(foto);
+		pepe20(*foto);
+		set_receiver(PEPE20);
+
+		LEOZIN12; \\rotina que realiza a locomocao por meio do controle da base
+	}
+}
